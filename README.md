@@ -80,12 +80,12 @@ Formulate the problem as the pic below:
   <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
 </p>
 
-In order to simulate the process of training, we set a timesnap to split the original training section into two part. One is for training and one is for validation on our model. The window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
+In order to simulate the process of training, we set a time threshold to split the original training section into two part. One is for training and one is for validation on our model. The window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
 
 The pic illustrates our discussion above.
 
 <p align="center">
-  <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/Training%20Diagram.png" width="520" height="200" />
+  <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/Training%20Diagram.png" width="550" height="200" />
 </p>
 ### Target 2 - Music Recommendations 
 
