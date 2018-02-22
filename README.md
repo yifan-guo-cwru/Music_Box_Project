@@ -82,11 +82,12 @@ Formulate the problem as the pic below:
 
 In order to simulate the process of training, we set a time threshold to split the original training section into two part. One is for training and one is for validation on our model. The window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
 
-The pic illustrates our discussion above.
+This pic illustrates our discussion above.
 
 <p align="center">
   <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/Training%20Diagram.png" width="550" height="200" />
 </p>
+
 ### Target 2 - Music Recommendations 
 
 In this task, we would predict the chances of a user listening to a song repetitively after the first observable listening event within a time window was triggered. If there are recurring listening event(s) triggered within a month after the user’s very first observable listening event, its target is marked 1, and 0 otherwise in the training set. The same rule applies to the testing set.
