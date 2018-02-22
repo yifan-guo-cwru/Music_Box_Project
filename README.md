@@ -76,7 +76,9 @@ User who has at least one playing activity within a time window in the play log 
 
 Formulate the problem as the pic below:
 
-
+<p align="center">
+  <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
+</p>
 
 ### Target 2 - Music Recommendations 
 
