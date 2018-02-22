@@ -64,11 +64,11 @@ In this task, we want to forecast if a user keep on using our product during a f
 
 Based on our dataset, we keep the playing log dataset with active user from March 30, 2017 to May 12, 2017.
 
-    * Training set: active user (3/30/2017 - 4/28/2017)
+    <*> Training set: active user (3/30/2017 - 4/28/2017)
 
-    * Validation set: user from training set (4/29/2017 - 5/12/2017)
+    <*> Validation set: user from training set (4/29/2017 - 5/12/2017)
 
-    * Fixed window size: 2 week(14 days)
+    <*> Fixed window size: 2 week(14 days)
 
 Define the criteria of "active user":
 
