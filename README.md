@@ -90,5 +90,5 @@ Some materials referered while feature engineering:
     
     [https://www.kaggle.com/lystdo/beat-kkbox-benchmark-without-using-metadata-0-62/data](https://www.kaggle.com/lystdo/beat-kkbox-benchmark-without-using-metadata-0-62/data)
     
-    Meanwhile the same dataset could be also used for music recommendations
+    Meanwhile the same dataset could be also used for music recommendations
 
