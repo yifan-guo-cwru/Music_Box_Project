@@ -60,7 +60,7 @@ Reference:
 
 ### Target 1 - Churn Predictions
 
-In this task, we want to forecast if a user keeps on using our product during a focused time period who has at least one observable playing activity before certain focused time window.
+In this task, we want to forecast if a user keeps on using our product during a focused time period who once previously used our products before certain focused time.
 
 Based on our dataset, we keep the playing log dataset with active user from March 30, 2017 to May 12, 2017.
 
