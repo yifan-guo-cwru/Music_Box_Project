@@ -80,7 +80,7 @@ Formulate the problem as the pic below:
   <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
 </p>
 
-In order to simulate the process of training, we set a time threshold to split the original training section into two part. One is for training and one is for validation on our model. The window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
+In order to simulate the process of training, we set a time threshold to split the original training section into two part. One is for training and one is for validation on our model. The time window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio of time window size is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
 
 This pic illustrates our discussion above.
 
