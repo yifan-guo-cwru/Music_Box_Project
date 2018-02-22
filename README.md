@@ -66,9 +66,9 @@ Based on our dataset, we keep the playing log dataset with active user from Marc
 
     <*> Training set: active user during training time period(3/30/2017 - 4/28/2017)
 
-    <*> Validation set:  whether users from training set still are active (4/29/2017 - 5/12/2017)
+    <*> Testing set:  whether users from training set still are active (4/29/2017 - 5/12/2017)
 
-    <*> Fixed validation window size: 2 week(14 days)
+    <*> Fixed testing window size: 2 week(14 days)
 
 Define the criteria of "active user":
 
