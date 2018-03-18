@@ -105,23 +105,23 @@ Feature engineering
 
 * Data Cleaning
 
-    Remove records satisfying any of the following:
-        
-        * Any attributes Including null values
+   Remove records satisfying any of the following:
+
+   * Any attributes Including null values
     
-        * Uid, song id, play time, song length including characters
+   * Uid, song id, play time, song length including characters
     
-        * Play time is larger than song length
+   * Play time is larger than song length
 
 * Feature Design
     
-    A total of 11 features from 3 categories
-    
-        * frequency on play log(last 1,3,7,14,30 days)
+   A total of 11 features from 3 categories:
+   
+   * Frequency on play log(last 1,3,7,14,30 days)
         
-        * Recency
+   * Recency
         
-        * Play time percentage per song(last 1,3,7,14,30 days)
+   * Play time percentage per song(last 1,3,7,14,30 days)
 
 
 ### Target 2 - Music Recommendations(No time to implement now)
