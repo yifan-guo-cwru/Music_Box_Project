@@ -31,7 +31,26 @@
 * Data Intergration 
 * Data Exploration
 
+
+    Raw Data Description
+
+        * Only play log data included in my project
+        * Data size: 14.1 G
+        * Attributes: uid, device, song id, play time, song length, song name, singers
+
+    Data Exploration
+    
+        * 871702 Users, 164,667,143 play records
+        * Time series: 2018-03-01 to 2018-03-09; 2018-03-29 to 2018-05-12
+
+    Platform: Local Computer (Macbook pro with 16G RAM)
+    
+    Programming Language: python
+    
+    Package: Spark(python based), pandas, scikit-learn, keras
+
 Small tips during testing
+
 1. Run a shell file on macOS system
 
     To make a script executable, give it the necessary permission:
@@ -60,19 +79,19 @@ Reference:
 
 ### Target 1 - Churn Predictions
 
-In this task, we want to forecast if a user keeps on using our product during a focused time period who once previously used our products before certain focused time.
+In this task, we want to forecast if a user keeps on using our product during a focused time period who once previously used our products before the snapshot time.
 
 Based on our dataset, we keep the playing log dataset with active user from March 30, 2017 to May 12, 2017.
 
-    <*> Training set: active user during training time period(3/30/2017 - 4/28/2017)
+    * Before the snapshot time: active user during the time period from 3/30/2017 to 4/28/2017
 
-    <*> Testing set:  whether users from training set are still active (4/29/2017 - 5/12/2017)
+    * Focusing Time Window:  whether certain users are still active from 4/29/2017 to 5/12/2017
 
-    <*> Fixed testing window size: 2 week(14 days)
+    * Fixed testing window size: 2 week(14 days)
 
 Define the criteria of "active user":
 
-User who has at least one playing activity within training time period in the play log could be regarded as an "active user".
+User who has at least one playing activity before the snapshot time in the play log could be regarded as an "active user".
 
 Formulate the problem as the pic below:
 
@@ -80,15 +99,32 @@ Formulate the problem as the pic below:
   <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
 </p>
 
-In order to simulate the process of training, we set a time threshold to split the original training section into two part. One is for training and one is for validation on our model. The time window size for the training set and testing set are 30 days and 14 days correspondingly. The ratio of time window size is around 0.7:0.3. In order to be consistent with this ratio, the simulation on the training data set also follows certain ratio. This is to say, during the training process. The first 21 days would be used for training and the rest 9 days would be treated for validation.
+Feature engineering
 
-This pic illustrates our discussion above.
+* Useful attributes: uid, date, song id, play time, song length
 
-<p align="center">
-  <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/Training%20Diagram.png" width="550" height="200" />
-</p>
+* Data Cleaning
 
-### Target 2 - Music Recommendations 
+    Remove records satisfying any of the following:
+        
+        * Any attributes Including null values
+    
+        * Uid, song id, play time, song length including characters
+    
+        * Play time is larger than song length
+
+* Feature Design
+    
+    A total of 11 features from 3 categories
+    
+        * frequency on play log(last 1,3,7,14,30 days)
+        
+        * Recency
+        
+        * Play time percentage per song(last 1,3,7,14,30 days)
+
+
+### Target 2 - Music Recommendations(No time to implement now)
 
 In this task, we would predict the chances of a user listening to a song repetitively after the first observable listening event within a time window was triggered. If there are recurring listening event(s) triggered within a month after the user’s very first observable listening event, its target is marked 1, and 0 otherwise in the training set. The same rule applies to the testing set.
 
