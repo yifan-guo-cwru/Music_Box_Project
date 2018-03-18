@@ -115,12 +115,9 @@ Remove records satisfying any of the following:
    
 * Feature Design
     
-A total of 11 features from 3 categories:
-   
- 1) Frequency on play log(last 1,3,7,14,30 days)
-        
- 2) Recency
-        
+A total of 11 features from 3 categories:   
+ 1) Frequency on play log(last 1,3,7,14,30 days)     
+ 2) Recency     
  3) Play time percentage per song(last 1,3,7,14,30 days)
 
 
