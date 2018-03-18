@@ -83,11 +83,11 @@ In this task, we want to forecast if a user keeps on using our product during a 
 
 Based on our dataset, we keep the playing log dataset with active user from March 30, 2017 to May 12, 2017.
 
-    * Before the snapshot time: active user during the time period from 3/30/2017 to 4/28/2017
+*  Before the snapshot time: active user during the time period from 3/30/2017 to 4/28/2017
 
-    * Focusing Time Window:  whether certain users are still active from 4/29/2017 to 5/12/2017
-
-    * Fixed testing window size: 2 week(14 days)
+*  Focusing Time Window:  whether certain users are still active from 4/29/2017 to 5/12/2017
+    
+*  Fixed testing window size: 2 week(14 days)
 
 Define the criteria of "active user":
 
@@ -105,23 +105,23 @@ Feature engineering
 
 * Data Cleaning
 
-   Remove records satisfying any of the following:
+Remove records satisfying any of the following:
 
-   * Any attributes Including null values
+ 1) Any attributes Including null values
     
-   * Uid, song id, play time, song length including characters
+ 2) Uid, song id, play time, song length including characters
     
-   * Play time is larger than song length
-
+ 3) Play time is larger than song length
+   
 * Feature Design
     
-   A total of 11 features from 3 categories:
+A total of 11 features from 3 categories:
    
-   * Frequency on play log(last 1,3,7,14,30 days)
+ 1) Frequency on play log(last 1,3,7,14,30 days)
         
-   * Recency
+ 2) Recency
         
-   * Play time percentage per song(last 1,3,7,14,30 days)
+ 3) Play time percentage per song(last 1,3,7,14,30 days)
 
 
 ### Target 2 - Music Recommendations(No time to implement now)
