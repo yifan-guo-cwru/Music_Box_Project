@@ -143,8 +143,8 @@ Some materials referered while feature engineering:
 * Hyperparameter Tuning
 * Modeling Design
 
-| Model          | Logistic Regression | Random Forest    | RF with Tuning                   | Neural Network |
-| -------------- | ------------------- | ---------------- | -------------------------------- | -------------- |
-| Hyperparameter | C = 0.1 L2 penalty  | N_estimator = 10 | N_estimator = 300, max_depth = 30 | 11->8->4->1    |                                                          
-| AUC            | 0.7159              | 0.8422           | 0.8564                           | 0.8198         |
+| Model          | Logistic Regression | Random Forest      | RF with Tuning                    | Neural Network |
+| -------------- | ------------------- | ------------------ | --------------------------------- | -------------- |
+| Hyperparameter | C = 0.1 L2 penalty  | N_estimator = 10   | N_estimator = 300, max_depth = 30 | 11->8->4->1    |                                                          
+| AUC            | 0.7159              | 0.8422             | 0.8564                            | 0.8198         |
 
