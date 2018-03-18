@@ -99,27 +99,31 @@ Formulate the problem as the pic below:
   <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
 </p>
 
-Feature engineering
+-> Feature engineering
 
-* Useful attributes: uid, date, song id, play time, song length
+->-> Useful attributes: uid, date, song id, play time, song length
 
-* Data Cleaning
+->-> Data Cleaning
 
-Remove records satisfying any of the following:
+->->-> Remove records satisfying any of the following:
 
- 1) Any attributes Including null values
-    
- 2) Uid, song id, play time, song length including characters
-    
- 3) Play time is larger than song length
+->->-> 1) Any attributes Including null values
+
+->->-> 2) Uid, song id, play time, song length including characters
+
+->->-> 3) Play time is larger than song length
    
-* Feature Design
-    
-A total of 11 features from 3 categories:   
- 1) Frequency on play log(last 1,3,7,14,30 days)     
- 2) Recency     
- 3) Play time percentage per song(last 1,3,7,14,30 days)
+->-> Feature Design
 
+
+
+->->-> A total of 11 features from 3 categories:   
+
+->->-> 1) Frequency on play log(last 1,3,7,14,30 days)     
+ 
+->->-> 2) Recency     
+ 
+->->-> 3) Play time percentage per song(last 1,3,7,14,30 days)
 
 ### Target 2 - Music Recommendations(No time to implement now)
 
@@ -132,4 +136,15 @@ Some materials referered while feature engineering:
     [https://www.kaggle.com/lystdo/beat-kkbox-benchmark-without-using-metadata-0-62/data](https://www.kaggle.com/lystdo/beat-kkbox-benchmark-without-using-metadata-0-62/data)
     
     Meanwhile the same dataset could also be used for music recommendations
+
+## Week Three
+
+* Design the target
+* Hyperparameter Tuning
+* Modeling Design
+
+| Model          | Logistic Regression | Random Forest    | RF with Tuning                   | Neural Network |
+| -------------- | ------------------- | ---------------- | -------------------------------- | -------------- |
+| Hyperparameter | C = 0.1 L2 penalty  | N_estimator = 10 | N_estimator = 300, max_depth = 30 | 11->8->4->1    |                                                          
+| AUC            | 0.7159              | 0.8422           | 0.8564                           | 0.8198         |
 
