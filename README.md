@@ -84,7 +84,7 @@ User who has at least one playing activity before the snapshot time in the play 
 Formulate the problem as the pic below:
 
 <p align="center">
-  <img src="https://github.com/yxg383/Music_Box_Project/blob/master/pic/scheme.png" width="550" height="350" />
+  <img src="pic/scheme.png" width="550" height="350" />
 </p>
 
 -> Feature engineering
