@@ -15,7 +15,7 @@ Option 2：Recommendation
 * Define implicit ratings from user behavior data
 * Build music recommendation system based on user listening history, including: popularity-based recommender, item-item based recommender, matrix factorization-based recommender.
 
-The main thread of week 1 - 4 are about the Churn Prediction project. The recommendation system project is a side work to run simultaneously.
+The main thread of week 1 - 4 is about the Churn Prediction project. The recommendation system project is a side project to work on simultaneously.
 
 ## Week One
 
