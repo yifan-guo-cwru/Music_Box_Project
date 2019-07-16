@@ -1,26 +1,27 @@
 # Music_Box_Project
 
-项目目标：
+## The goal of the project
 
-目标一：Churn Prediction
+Option 1：Churn Prediction
 * Validate dataset, identify missing values and find inconsistencies in the dataset.
 * Perform data cleaning and transformation, feature engineering
 * Exploratory data analysis, e.g. find most popular songs, most active users
 * Build user churn prediction model based on user behavior, implement full cycle of prediction modeling from population   selection and sampling, label definition, feature exaction and engineering, model selection, performance evaluation.
 
 
-目标二：Recommendation
+Option 2：Recommendation
 * Validate dataset, identify missing values and find inconsistencies in the dataset.
 * Perform data cleaning and transformation, and construct utility matrix from user behavior data
 * Define implicit ratings from user behavior data
 * Build music recommendation system based on user listening history, including: popularity-based recommender, item-item based recommender, matrix factorization-based recommender.
+
+The main thread of week 1 - 4 are about the Churn Prediction project. The recommendation system project is a side work to run simultaneously.
 
 ## Week One
 
 * Download the data from the website
 * Data Intergration 
 * Data Exploration
-
 
     Raw Data Description
 
@@ -50,13 +51,10 @@ Small tips during testing
     Now run .sh file as follows:
 
     `./file.sh`
-2. Install Apache Spark + ipython/jupyter notebook integration guide for macOS
+    
+2. [Install Apache Spark + ipython/jupyter notebook integration guide for macOS](https://gist.github.com/ololobus/4c221a0891775eaa86b0)
 
-    [https://gist.github.com/ololobus/4c221a0891775eaa86b0](https://gist.github.com/ololobus/4c221a0891775eaa86b0)
-
-3. How to add a line to .bash_profile
-
-    [https://superuser.com/questions/678113/how-to-add-a-line-to-bash-profile](https://superuser.com/questions/678113/how-to-add-a-line-to-bash-profile)
+3. [How to add a line to .bash_profile](https://superuser.com/questions/678113/how-to-add-a-line-to-bash-profile)
 
 Reference:
 1. Markdown cheatsheet: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
